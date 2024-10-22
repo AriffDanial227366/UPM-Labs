@@ -25,10 +25,29 @@ public class MathFormulas {
     // Method for the first formula
     public static double firstFormula(double a, double b, double c, double d, double r) {
         return (4 / (3 * (r + 34))) - (9 * (a + b * c)) + ((3 + d * (2 + a * a)) / (a + b * d)); // Returns answer after formula
+        /*
+        If it's hard to read, you can break the formula into steps for better readability, but it is longer:
+
+        double stepOne = 4 / (3 * (r + 34));
+        double stepTwo = 9 * (a + b * c);
+        double stepThree = (3 + d * (2 + a * a) / (a + b * d)
+        return stepOne - stepTwo + stepThree;
+
+        It can be split into more steps
+         */
     }
 
     // Method for the second formula
     public static double secondFormula(double a, double b, double c, double x, double y) {
         return ((3 + 4 * x) / 5) - ((10 * (y - 5) * (a + b + c)) / x) + 9 * ((4 / x) + ((9 + x) / y)); // Returns answer after formula
+        /* Same thing, you can break this into steps:
+
+        double stepOne = (3 + 4 * x) / 5;
+        double stepTwo = (10 * (y - 5) * (a + b + c)) / x;
+        double stepThree = 9 * ((4 / x) + ((9 + x) / y));
+        return stepOne - stepTwo + stepThree;
+
+        It can be split into more steps
+        */
     }
 }
