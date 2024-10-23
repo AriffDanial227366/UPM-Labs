@@ -2,6 +2,8 @@ import java.util.Scanner; // Imports scanner
 
 public class MathFormulas {
     public static void main(String[] args) {
+        System.out.println("The first formula is: (4 / (3 * (r + 34))) - (9 * (a + b * c)) + ((3 + d * (2 + a * a)) / (a + b * d))\n");
+        System.out.println("The second formula is: ((3 + 4 * x) / 5) - ((10 * (y - 5) * (a + b + c)) / x) + 9 * ((4 / x) + ((9 + x) / y))\n");
         Scanner scanner = new Scanner(System.in); // Initialise scanner as "scanner" variable
         System.out.println("What is a?"); // Prompts for user input of a and save as variable
         double a = scanner.nextDouble();
@@ -17,14 +19,8 @@ public class MathFormulas {
         double x = scanner.nextDouble();
         System.out.println("\nWhat is y?"); // Prompts for user input of y and save as variable
         double y = scanner.nextDouble();
-        double firstAnswer = firstFormula(r, a, b, c, d); // Calls the firstFormula method with variables r, a, b, c, and d
-        double secondAnswer = secondFormula(a, b, c, x, y); // Calls the secondFormula method with variable a, b, c, x, and y
-        System.out.println("\nAnswer for first formula is: " + firstAnswer + "\nAnswer for second formula is: " + secondAnswer); // Answer
-    }
+        double firstAnswer = (4 / (3 * (r + 34))) - (9 * (a + b * c)) + ((3 + d * (2 + a * a)) / (a + b * d)); // Calls the firstFormula method with variables r, a, b, c, and d
 
-    // Method for the first formula
-    public static double firstFormula(double a, double b, double c, double d, double r) {
-        return (4 / (3 * (r + 34))) - (9 * (a + b * c)) + ((3 + d * (2 + a * a)) / (a + b * d)); // Returns answer after formula
         /*
         If it's hard to read, you can break the formula into steps for better readability, but it is longer:
 
@@ -35,11 +31,9 @@ public class MathFormulas {
 
         It can be split into more steps
          */
-    }
 
-    // Method for the second formula
-    public static double secondFormula(double a, double b, double c, double x, double y) {
-        return ((3 + 4 * x) / 5) - ((10 * (y - 5) * (a + b + c)) / x) + 9 * ((4 / x) + ((9 + x) / y)); // Returns answer after formula
+        double secondAnswer = ((3 + 4 * x) / 5) - ((10 * (y - 5) * (a + b + c)) / x) + 9 * ((4 / x) + ((9 + x) / y)); // Calls the secondFormula method with variable a, b, c, x, and y
+
         /* Same thing, you can break this into steps:
 
         double stepOne = (3 + 4 * x) / 5;
@@ -49,5 +43,7 @@ public class MathFormulas {
 
         It can be split into more steps
         */
+
+        System.out.println("\nAnswer for first formula is: " + firstAnswer + "\nAnswer for second formula is: " + secondAnswer); // Answer
     }
 }

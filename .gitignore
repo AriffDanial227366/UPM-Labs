@@ -4,6 +4,7 @@
 # User-specific stuff
 /shelf/
 /workspace.xml
+.idea
 /**/.idea
 /**/**/.idea
 /**/**/**/.idea
@@ -12,6 +13,8 @@
 .idea/**/usage.statistics.xml
 .idea/**/dictionaries
 .idea/**/shelf
+*.xml
+*.iml
 
 # AWS User-specific
 .idea/**/aws.xml
